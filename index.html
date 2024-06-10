@@ -1,11 +1,128 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
-<title>Hello, world!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이력서</title>
+    <style>
+        html{
+	background-color: black;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        .section {
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .section:nth-child(odd) {
+            background-color: #ff6f61; /* 빨강 */
+        }
+        .section:nth-child(3n) {
+            background-color: #ffca3a; /* 노랑 */
+        }
+        .section:nth-child(5n) {
+            background-color: #32cd32; /* 초록 */
+        }
+        .section:nth-child(7n) {
+            background-color: #6495ed; /* 파랑 */
+        }
+        .section:nth-child(11n) {
+            background-color: #9b30ff; /* 보라 */
+        }
+        .section-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #fff; /* 흰색 */
+        }
+        .list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .list-item {
+            margin-bottom: 5px;
+        }
+        .list-item strong {
+            font-weight: bold;
+        }
+        .interests {
+            margin-top: 10px;
+        }
+        .interests-item {
+            display: inline-block;
+            background-color: rgba(255, 255, 255, 0.7); /* 흰색, 투명도 70% */
+            color: #333;
+            padding: 5px 10px;
+            margin-right: 5px;
+            border-radius: 5px;
+        }
+        .image {
+            max-width: 200px;
+            border-radius: 8px;
+        }
+    </style>
 </head>
 <body>
-<h1>Hello, world!</h1>
-<p>Sunhee의 홈페이지에 오신 것을 환영합니다!</p>
+    <div class="container">
+        <h1>이력서</h1>
+        <div class="section" style="background-color: #FCB9AA;">
+            <h2 class="section-title" style="color: black;">개인 정보</h2>
+            <ul class="list" style="color: black;">
+                <li class="list-item"><strong>이름(한글):</strong> 백민성</li>
+                <li class="list-item"><strong>이름(영문):</strong> Baek Min Seong </li>
+                <li class="list-item"><strong>이메일 주소:</strong> bms7363@dongyang.ac.kr </li>
+            </ul>
+        </div>
+        <div class="section" style="background-color: #FFDBCC;">
+            <h2 class="section-title" style="color: black;">기술 스택</h2>
+            <ul class="list" style="color: black;">
+                <li class="list-item"><strong>다룰 수 있는 언어:</strong> Python, html, css </li>
+                <li class="list-item"><strong>도구:</strong> github, slack, notion, google 개발 도구</li>
+            </ul>
+        </div>
+        <div class="section" style="background-color: #FFFFB5;">
+            <h2 class="section-title" style="color: black;">대학 정보</h2>
+            <ul class="list" style="color: black;">
+                <li class="list-item"><strong>학교 이름:</strong> 동양미래대학교</li>
+                <li class="list-item"><strong>학과:</strong> 컴퓨터소프트웨어공학과 </li>
+                <li class="list-item"><strong>입학 년도:</strong> 2024년 </li>
+            </ul>
+        </div>
+        <div class="section" style="background-color: #A2E1DB;">
+            <h2 class="section-title" style="color: black;">기술 개발 경험</h2>
+            <ul class="list" style="color: black;">
+                <li class="list-item"><strong>수업 내용:</strong> 웹 프로그래밍 기초, 정보처리기초, SW개발도구활용, 프로그래밍방법론 </li>
+                <li class="list-item"><strong>이전에 학습했던 내용:</strong> 정보, 프로그래밍 (고등학교) </li>
+            </ul>
+        </div>
+        <div class="section" style="background-color: #55CBCD;">
+            <h2 class="section-title" style="color: black;">관심 기술 분야</h2>
+            <div class="interests">
+                <span class="interests-item"> 웹 디자인 </span>
+                <span class="interests-item"> 벡엔드 (Python) </span>
+                <span class="interests-item">모바일 환경 제작</span>
+            </div>
+        </div>
+        <div class="section" style="background-color: #CBAACB;>
+            <h2 class="section-title" style="color: black;">사진</h2><br>
+            <img src="data:image/jpeg;base64,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" alt="프로필 사진" class="image">
+        </div>
+    </div>
 </body>
 </html>
-
